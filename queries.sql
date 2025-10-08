@@ -24,7 +24,7 @@ WHERE student_id <= (
   AND club_name IS NOT NULL
 GROUP BY major
 HAVING COUNT(*) = 1
-ORDER BY student_count DESC
+ORDER BY major DESC
 LIMIT 3;
 
 /*
